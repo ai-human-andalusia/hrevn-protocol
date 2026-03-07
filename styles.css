@@ -51,6 +51,21 @@ body {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.brand span {
+  white-space: nowrap;
 }
 
 nav {
@@ -237,6 +252,10 @@ p {
     gap: 12px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .brand img {
+    height: 34px;
   }
 
   .hero {
