@@ -40,7 +40,7 @@ body {
 }
 
 .header-inner {
-  min-height: 92px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,22 +53,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand img {
-  height: 64px;
-  width: auto;
-  max-width: 240px;
-  max-height: 64px;
-  min-width: 0;
-  display: block;
-  object-fit: contain;
-}
-
-.brand span {
   white-space: nowrap;
 }
 
@@ -94,6 +78,13 @@ nav a:focus-visible {
 
 .hero-content {
   max-width: 900px;
+}
+
+.hero-logo {
+  display: block;
+  width: min(440px, 86%);
+  height: auto;
+  margin: 0 0 10px;
 }
 
 .eyebrow {
@@ -245,7 +236,7 @@ p {
 
 @media (max-width: 640px) {
   .header-inner {
-    min-height: 72px;
+    min-height: 56px;
     gap: 14px;
     flex-direction: column;
     justify-content: center;
@@ -258,12 +249,8 @@ p {
     justify-content: center;
   }
 
-  .brand img {
-    height: 44px;
-    width: auto;
-    max-width: 170px;
-    max-height: 44px;
-    min-width: 0;
+  .hero-logo {
+    width: min(360px, 94%);
   }
 
   .hero {
