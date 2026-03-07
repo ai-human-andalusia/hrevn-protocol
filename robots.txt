@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-human-andalusia.github.io/hrevn-protocol/sitemap.xml
+Sitemap: https://hrevn.com/sitemap.xml
