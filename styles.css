@@ -91,7 +91,7 @@ nav a:focus-visible {
 
 .hero-logo {
   display: block;
-  width: min(176px, 34%);
+  width: min(282px, 54%);
   height: auto;
   margin: 0 0 10px;
 }
@@ -258,7 +258,7 @@ p {
   }
 
   .hero-logo {
-    width: min(144px, 38%);
+    width: min(230px, 61%);
   }
 
   .hero {
