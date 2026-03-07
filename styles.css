@@ -77,17 +77,6 @@ nav a:focus-visible {
   max-width: 900px;
 }
 
-.hero-logo-wrap {
-  margin: 0 0 14px;
-}
-
-.hero-logo {
-  display: block;
-  width: min(620px, 100%);
-  height: auto;
-  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.25));
-}
-
 .eyebrow {
   margin: 0;
   color: var(--accent-soft);
@@ -254,7 +243,4 @@ p {
     padding-top: 68px;
   }
 
-  .hero-logo {
-    width: min(500px, 100%);
-  }
 }
