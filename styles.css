@@ -266,3 +266,13 @@ p {
   }
 
 }
+
+
+p a {
+  color: #9dd3bf;
+}
+
+p a:hover,
+p a:focus-visible {
+  color: #c6eadc;
+}
