@@ -48,28 +48,61 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@id": "https://hrevn.com/#website",
             "@type": "WebSite",
             "name": "H-REVN Protocol",
             "url": "https://hrevn.com/",
             "description": "technical protocol for cryptographic integrity of physical evidence",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://hrevn.com/#organization"
+            }
+          },
+          {
+            "@id": "https://hrevn.com/#webpage",
+            "@type": "WebPage",
+            "url": "https://hrevn.com/",
+            "name": "H-REVN Protocol | Integridad criptográfica para evidencias físicas",
+            "isPartOf": {
+              "@id": "https://hrevn.com/#website"
+            },
+            "about": {
+              "@id": "https://hrevn.com/#software"
+            },
             "inLanguage": "es"
           },
           {
+            "@id": "https://hrevn.com/#organization",
             "@type": "Organization",
             "name": "H-REVN Protocol",
             "url": "https://hrevn.com/",
             "description": "technical protocol for cryptographic integrity of physical evidence",
+            "logo": "https://hrevn.com/assets/logo-hrevn.png",
+            "email": "miguel.herrero@hrevn.com",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "institutional inquiries",
+                "email": "miguel.herrero@hrevn.com",
+                "availableLanguage": ["es", "en"],
+                "url": "https://hrevn.com/#contacto"
+              }
+            ],
             "sameAs": [
               "https://github.com/ai-human-andalusia"
             ]
           },
           {
+            "@id": "https://hrevn.com/#software",
             "@type": "SoftwareApplication",
             "name": "H-REVN Protocol - PVM Reference Engine",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
             "description": "technical protocol for cryptographic integrity of physical evidence",
-            "url": "https://hrevn.com/"
+            "url": "https://hrevn.com/",
+            "publisher": {
+              "@id": "https://hrevn.com/#organization"
+            }
           }
         ]
       }
