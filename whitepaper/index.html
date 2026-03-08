@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H-REVN Protocol White Paper v1.0</title>
+    <meta
+      name="description"
+      content="H-REVN Protocol White Paper v1.0: conceptual specification for cryptographic integrity of physical evidence and the Physical Veracity Mechanism (PVM)."
+    />
+    <meta
+      name="keywords"
+      content="H-REVN whitepaper, physical veracity mechanism, evidence bundle, cryptographic integrity, technical audit"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hrevn.com/whitepaper/" />
+    <link rel="alternate" hreflang="en" href="https://hrevn.com/whitepaper/" />
+    <link rel="alternate" hreflang="es" href="https://hrevn.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://hrevn.com/whitepaper/" />
+    <link rel="icon" href="/assets/favicon.png?v=2" sizes="32x32" type="image/png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="H-REVN Protocol White Paper v1.0" />
+    <meta
+      property="og:description"
+      content="Conceptual specification for cryptographic integrity of physical evidence."
+    />
+    <meta property="og:url" content="https://hrevn.com/whitepaper/" />
+    <meta property="og:image" content="https://hrevn.com/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="H-REVN Protocol White Paper v1.0" />
+    <meta
+      name="twitter:description"
+      content="Conceptual specification for cryptographic integrity of physical evidence."
+    />
+    <meta name="twitter:image" content="https://hrevn.com/assets/og-image.png" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <nav aria-label="Main">
+          <a href="../">Inicio</a>
+          <a href="../en/" lang="en">EN Site</a>
+          <a href="HREVN_Protocol_White_Paper_v1.0.pdf" download>Download PDF</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="whitepaper-top">
+        <div class="container hero-content">
+          <p class="hero-brand-title">H-REVN Protocol</p>
+          <h1>White Paper - Conceptual Specification</h1>
+          <p class="subtitle">Version 1.0 - March 2026</p>
+          <p>
+            Cryptographic Integrity Framework for Physical Evidence.
+            This page contains the written web version and the official downloadable PDF release.
+          </p>
+          <p class="actions-row">
+            <a class="btn" href="HREVN_Protocol_White_Paper_v1.0.pdf" download>Download PDF v1.0</a>
+            <a class="btn btn-secondary" href="../">Back to main site</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="abstract">
+        <div class="container">
+          <h2>Abstract</h2>
+          <p>
+            The H-REVN Protocol proposes a conceptual framework designed to improve trust in
+            documentation describing physical events. Across many industries, decisions depend on
+            documentation that attempts to represent real world activities. Photographs, inspection
+            reports, spreadsheets, and PDF files are widely used to record evidence of work
+            performed or assets installed. However, these documents do not inherently provide
+            guarantees of authenticity or provenance.
+          </p>
+          <p>
+            The H-REVN Protocol introduces a structured model in which physical evidence is treated
+            as a verifiable dataset rather than as an isolated document. Evidence captured in the
+            field is associated with contextual metadata and grouped into structured containers
+            called Evidence Bundles. Each bundle can be associated with a cryptographic integrity
+            fingerprint allowing third parties to verify that the dataset has not been altered.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="physical-truth-gap">
+        <div class="container">
+          <h2>The Physical Truth Gap</h2>
+          <p>
+            Digital systems have achieved high reliability when verifying purely digital information.
+            However, reliability decreases when digital systems attempt to represent events occurring
+            in the physical world. This discrepancy creates what can be described as the Physical
+            Truth Gap.
+          </p>
+          <p>
+            A photograph may represent a real installation but it may also be taken in a different
+            location or at a different time. A written inspection report may describe a condition but
+            the document itself does not guarantee that the observation occurred as described. As a
+            result many verification processes still depend on manual auditing.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="evidence-bundle">
+        <div class="container">
+          <h2>Evidence as a Verifiable Object</h2>
+          <p>
+            Traditional documentation systems treat evidence artifacts separately. Images, written
+            observations, and contextual information are often stored in different places. This
+            fragmentation makes verification difficult and time consuming.
+          </p>
+          <p>
+            The H-REVN Protocol introduces the concept of the Evidence Bundle. An Evidence Bundle
+            is a structured digital container representing the documentation of a physical event or
+            asset state. Instead of isolated files the protocol groups images, metadata, and
+            observations into a single coherent dataset.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="pvm">
+        <div class="container">
+          <h2>Physical Veracity Mechanism</h2>
+          <p>
+            The Physical Veracity Mechanism, or PVM, describes the conceptual workflow through which
+            evidence datasets are created and secured. Field operators capture evidence artifacts
+            such as photographs or measurements during inspections or technical interventions.
+          </p>
+          <p>
+            Contextual metadata such as timestamps, location references, and asset identifiers are
+            then associated with the captured evidence. The resulting dataset is structured as an
+            Evidence Bundle and a cryptographic fingerprint can be generated from the bundle state.
+            Any modification of the dataset produces a different fingerprint enabling independent
+            verification.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="applications">
+        <div class="container">
+          <h2>Institutional Applications</h2>
+          <p>
+            Structured evidence verification can improve documentation reliability across many
+            sectors. Infrastructure operators rely on inspection reports describing the condition of
+            assets such as buildings, energy installations, or industrial equipment. Evidence bundles
+            can make these reports easier to verify.
+          </p>
+          <p>
+            Public administrations responsible for subsidies or infrastructure programs must confirm
+            that installations or works have been completed correctly. Structured evidence datasets
+            can simplify auditing processes and reduce the need for repeated physical inspections.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="conclusion">
+        <div class="container">
+          <h2>Conclusion</h2>
+          <p>
+            As digital systems increasingly depend on accurate representations of physical events,
+            the limitations of traditional documentation methods become more visible. Static
+            documents provide useful records but they do not guarantee authenticity or integrity.
+          </p>
+          <p>
+            The H-REVN Protocol proposes a framework in which evidence is treated as a structured
+            and verifiable dataset. By associating evidence artifacts with contextual metadata and
+            cryptographic fingerprints, the protocol creates a foundation for trustworthy
+            documentation of real world events.
+          </p>
+          <p class="actions-row">
+            <a class="btn" href="HREVN_Protocol_White_Paper_v1.0.pdf" download>Download official PDF</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>H-REVN Protocol · White Paper v1.0 · https://hrevn.com/whitepaper/</p>
+      </div>
+    </footer>
+  </body>
+</html>
